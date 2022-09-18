@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <!-- Forms:
+    It itself is a container that doesnt have any visual impact. 
+    This element represents a document section containing interactive controls for submitting information.
+    The "action" attribute specifies WHERE the form data should be sent.
+    The "method" attribute specifies which HTTP method should be used.
+-->
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <!--<input> element:
+            It is used to create a variety of different form controls.
+            We have 20+ possible types of inputs. 
+            The "type" attribute when changed alters the input's behaviour and appearance. -->
+    <form action="/tacos">
+
+        <p>
+            <label for="username">Username:</label>
+            <!-- label is an inline element -->
+            <input id="username" type="text" placeholder="Your name" name="username" >
+            <!-- Name: When we submit the form of this data, username is the name that is used to send the data to the server.  -->
+
+            <!-- The input accepts text type of data. -->
+        </p>
+
+        <p>
+            <label for="password">Password:</label>
+            <input id="password" type="password" placeholder="Your password" name="password">
+        </p>
+
+        <p>
+            <label for="color">Favourite colour:</label>
+            <input id="color" type="color" placeholder="favourite colour" name="color">
+            <!-- Gives us a colour picker. 
+        Placeholder here wont work.-->
+        </p>
+
+        <p>
+            <label for="date">Date of the event:</label>
+            <input id="date" type="date" placeholder="Date of birth" name="date of birth">
+        </p>
+        <p>
+            <label for="number">Lucky number:</label>
+            <input id="number" type="number" placeholder="Lucky number"
+            name="number">
+        </p>
+
+        <p>
+            <label for="time">Time of filling the form:</label>
+            <input id="time" type="time" name="time">
+        </p>
+        <button type="button">Submit</button>
+        <!-- When we set the type of the button to "button", we are setting it to just act like a button, not submit to anything in particular. -->
+        <!-- After pressing the button (when the "type" is not set to button), it takes us to the page that we set the action to, here it is "tacos" -->
+        <input type="submit" value="Click me!">
+        <!-- Submit can also be written using the above input as "submit".
+        The "value" attribute acts as the text inside the submit button. -->
+    </form>
+    <!-- <label>:
+        We should have some sort of label with the input we choose.
+        Makes your forms easier to use.
+        The "for" tag should have the same value as the id we want it to be connected to.
+    <id>: 
+        Connection from a label to an input is made using "id" tag. It should be unique for every input.
+        It should be short and simple
+        We set the exact same value as that of the id for the "for" attribute. 
+        It tells you for what input, the label is being used.
+
+    <name>:
+
+
+ 
+    -->
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+h2{
+    color: blue;
+    text-align: center;
+    width: 50%;
+    font-weight: normal;
+    /* 
+    font-weight: 900;
+    */
+    text-decoration: underline;   
+    /* text-decoration: rgb(156, 156, 207) wavy line-through; */
+    letter-spacing: 10px;
+
+}
+
+p{
+    color: red;
+    /* text-align: right; */
+    font-weight: bold;
+    /* or
+    font-weight: 400;
+    */
+    line-height: 1.5;
+    /* Defines the breaks width between the lines */
+ 
+}
+/* 
+text-decoration: none;
+can be used to eliminate the default underline that comes in anchor tags. */
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    color: olive;
+}
+h4{
+    color: rgb(23, 23, 126);
+}

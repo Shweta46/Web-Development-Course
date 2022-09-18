@@ -1,0 +1,145 @@
+/* 
+The cascade-
+
+The order your styles are declared in and linked to MATTERS!
+
+h1{
+    color: red;
+}
+
+h1{
+    color: purple;
+}
+
+Here, PURPLE WINS!
+
+Also,
+
+the link to the CSS file that is attached the last, dominates the style.
+*/
+
+body{
+    background-color: #fefae0;
+}
+
+button{
+    font-size: 30px;
+    background-color: #bde0fe;
+}
+
+h1, h2{
+    color: #264653;
+}
+
+/* 
+Order of the styles matter, the one appearing after dominate the styling of the element.
+*/
+
+h1, h2{
+    color: #9d0208;
+}
+
+#signup{
+    background-color: #003049;
+    color: #eae2b7 ;
+}
+
+span{
+    color: #457b9d;
+}
+
+.tag{
+    background-color: #e76f51;
+    color: #fefae0;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+li a{
+    color: #d62828;
+    text-decoration: none;
+}
+
+span a{
+    color: #003049;
+}
+
+.post a{
+    color: #003049;
+}
+
+footer a{
+    color: #d62828;
+}
+
+input + button{
+    background-color: palegoldenrod;
+}
+
+h2 + button{
+    color: #14213d;
+    background-color: #fca311;
+    font-size: 20px;
+}
+
+footer > a{
+    color: black;
+}
+
+input[type="password"]{
+    color: greenyellow;
+}
+
+.post a{
+    color: #457b9d;    
+}
+
+button:hover{
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+.post button:hover{
+    background-color: #14213d;
+    color: white;
+}
+
+.post a:hover{
+    color: #457b9d;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+.post button:active{
+    background-color: #f72585;
+    color: #457b9d;
+
+}
+
+.post{
+    background-color: #c9cba3 ;
+}
+
+.post:nth-of-type(3){
+    background-color: #b5e48c;
+}
+
+.post:nth-of-type(2n){
+    background-color: #d9ed92;
+}
+
+h2:first-letter{
+    font-size: 30px;
+}
+
+p::first-line{
+    color: purple;
+}
+
+::selection{
+
+    background-color: #adc178;
+}
+p::selection{
+    background-color: #52b69a;
+}

@@ -1,0 +1,125 @@
+<!-- Tables are structured sets of data, made up of rows and columns. They can be a great way of displaying data clearly.
+Dont use them to layout a website.
+Elements in a table:
+<table> 
+<td> 
+<tr> 
+<th> 
+<tbody> 
+<tfoot> 
+<colgroup>
+<caption>
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables intro: TV series I have watched</title>
+</head>
+
+<body>
+    <h1>TV Series watched</h1>
+    <table>
+
+        <!-- for now we have 4 rows, so we want 4 th's in order to provide header to each of these rows 
+            
+
+            <thead>:
+                Wrap our rows of th or headers in this
+            -->
+        <thead>
+            <tr>
+                <th>Series name</th>
+                <th>Main lead actor</th>
+                <th>Main lead actress</th>
+                <th></th>
+            </tr>
+        </thead>
+        <!-- tbody is different from thead in the table or anywhere else-->
+        <tbody>
+            <tr>
+                <td>Crashing</td>
+                <td>Maggie</td>
+                <td>James</td>
+            </tr>
+            <tr>
+                <td>Fleabag</td>
+                <td>Fleabag</td>
+                <td>Father</td>
+            </tr>
+            <tr>
+                <td>Suits</td>
+                <td>Harvey Spectre</td>
+                <td>Jessica</td>
+            </tr>
+            <tr>
+                <td>Friends</td>
+                <td>Ross </td>
+                <td>Rachel</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- 
+        <td>:
+            Table data cell element,
+            defines single cell in the table defining a data
+        <tr>:
+            Represents a row of cells in a table
+
+        If we add a cell in any of the row then there are chances of misalignment among the information we want to add. So, to remove this misalignment we can add another empty <td> element.
+        
+        <th>:
+            defines a header that is laid across each row. This is done using th along with tr.
+
+     -->
+
+    <!-- Creating cells that span multiple columns or rows -->
+    <h2>
+        Second Table with cells with multiple columns and rows
+    </h2>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Series name</th>
+                <th colspan="2">Actors</th>
+            </tr>
+            <!-- If I want a cell of my header to cover two rows with a header then attach "rowspan" tag to it.
+            
+            Same when we want to span 2 columns in a single header cell
+        Here, I wanted my "Actors" header to span two columns, that is Main lead actor and Main Lead Actress, so I covered that-->
+            <tr>
+                <th>Main lead actor</th>
+                <th>Main lead actress</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Crashing</td>
+                <td>Maggie</td>
+                <td>James</td>
+            </tr>
+            <tr>
+                <td>Fleabag</td>
+                <td>Fleabag</td>
+                <td>Father</td>
+            </tr>
+            <tr>
+                <td>Suits</td>
+                <td>Harvey Spectre</td>
+                <td>Jessica</td>
+            </tr>
+            <tr>
+                <td>Friends</td>
+                <td>Ross </td>
+                <td>Rachel</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>

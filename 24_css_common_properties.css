@@ -1,0 +1,17 @@
+/* 
+
+*/
+
+h2{
+    color: teal;
+    background-color: palegoldenrod;
+}
+button{
+    color: magenta;
+    background-color: aqua;
+    /* changes the text colour */
+}
+p{
+    background-color: olive;
+    color: brown;
+}

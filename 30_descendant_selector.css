@@ -1,0 +1,64 @@
+
+body{
+    background-color: #fefae0;
+}
+
+button{
+    font-size: 30px;
+    background-color: #bde0fe;
+}
+
+h1, h2{
+    color: #264653;
+}
+
+#signup{
+    background-color: #003049;
+    color: #eae2b7 ;
+}
+
+span{
+    color: #457b9d;
+}
+
+.tag{
+    background-color: #e76f51;
+    color: #fefae0;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+/* 
+Commonly used along with class selector.
+Descendants meaning something that is nested inside an element in html
+If we want to change the anchor tag inside every li, then
+
+Syntax-
+
+li a{
+    color: teal;
+}
+
+This will only affect the anchor tags which are descendants of an li element.
+*/
+
+li a{
+    color: #d62828;
+    text-decoration: none;
+}
+
+span a{
+    color: #003049;
+}
+
+/* using class with descendant selector */
+
+.post a{
+    color: #003049;
+}
+
+/* anchor tag that is anywhere inside a footer tag */
+
+footer a{
+    color: #d62828;
+}

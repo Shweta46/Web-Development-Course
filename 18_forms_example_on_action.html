@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms example</title>
+</head>
+
+<body>
+    <h1>Forms example</h1>
+
+    <h2>Hijacking search engines!</h2>
+    <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search">
+
+        <!-- by setting up the action of the form to some known website and setting the name attribute to the one that we want, since name is through which a server searches something in a website, so we alter the "name" attribute accordingly. Hence,  -->
+        
+        <p>
+            <label for="search">Search something</label>
+            <input id="search" type="text" name="q">
+            <button>Search Reddit</button>
+        </p>
+    </form>
+    <h3>Search Google</h3>
+    <form action="https://www.gooogle.com/search">
+        <p>
+            <label for="search google">Search something in google</label>
+            <input id="search google" type="text" name="q">
+            <button>Search Google</button>
+        </p>
+    </form>
+    <h3>Search YouTube</h3>
+    <form action="https://www.youtube.com/results">
+        <p>
+            <label for="search YouTube">Search something on YouTube</label>
+            <input id="search YouTube" type="text" name="search_query">
+            <button>Search YouTube</button>
+        </p>
+    </form>
+</body>
+
+</html>

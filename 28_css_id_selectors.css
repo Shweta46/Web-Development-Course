@@ -1,0 +1,22 @@
+/* *{
+    background-color: cyan;
+} */
+
+body{
+    background-color: #fefae0;
+}
+
+button{
+    font-size: 30px;
+    background-color: #bde0fe;
+}
+
+h1, h2{
+    color: #264653;
+}
+
+/* using ID for designing the page */
+#signup{
+    background-color: #003049;
+    color: #eae2b7 ;
+}

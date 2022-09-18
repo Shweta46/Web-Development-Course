@@ -1,0 +1,148 @@
+/* 
+Pseudo classes:
+
+Keyword added to a selector that you style a particular part of selected elements.
+E.g., ::after; ::before, ::first-letter, ::first-line, ::selection, etc.
+
+Syntax-
+a::after{
+    color: orange;
+}
+
+*/
+
+body{
+    background-color: #fefae0;
+}
+
+button{
+    font-size: 30px;
+    background-color: #bde0fe;
+}
+
+h1, h2{
+    color: #264653;
+}
+
+#signup{
+    background-color: #003049;
+    color: #eae2b7 ;
+}
+
+span{
+    color: #457b9d;
+}
+
+.tag{
+    background-color: #e76f51;
+    color: #fefae0;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+li a{
+    color: #d62828;
+    text-decoration: none;
+}
+
+span a{
+    color: #003049;
+}
+
+.post a{
+    color: #003049;
+}
+
+footer a{
+    color: #d62828;
+}
+
+input + button{
+    background-color: palegoldenrod;
+}
+
+h2 + button{
+    color: #14213d;
+    background-color: #fca311;
+    font-size: 20px;
+}
+
+footer > a{
+    color: black;
+}
+
+input[type="password"]{
+    color: greenyellow;
+}
+
+.post a{
+    color: #457b9d;    
+}
+
+button:hover{
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+.post button:hover{
+    background-color: #14213d;
+    color: white;
+}
+
+.post a:hover{
+    color: #457b9d;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+.post button:active{
+    background-color: #f72585;
+    color: #457b9d;
+
+}
+
+.post{
+    background-color: #c9cba3 ;
+}
+
+.post:nth-of-type(3){
+    background-color: #b5e48c;
+}
+
+.post:nth-of-type(2n){
+    background-color: #d9ed92;
+}
+
+/* 
+
+Example
+Can be used with one semicolon as well. 
+h2:first-letter
+*/
+
+h2:first-letter{
+    font-size: 30px;
+}
+
+p::first-line{
+    color: purple;
+}
+
+/* 
+If we select some content of paragraph and we want the colour to change, we can do that using the selection pseudo element.
+
+Syntax-
+
+p::selection{
+
+}
+
+The below mentioned selection works for every element in the page.
+*/
+::selection{
+
+    background-color: #adc178;
+}
+p::selection{
+    background-color: #52b69a;
+}

@@ -1,0 +1,71 @@
+<!-- 
+
+CSS: Cascading Style Sheets
+
+It is a language that we can used to describe the visual representation of our document.
+
+It is adjective to the "The Purple Dino Danced" that is "Purple".
+
+Allows us to style and manipulate our visual component of html.
+
+--------------CSS Rules:----------------
+
+The basic pattern of CSS::after
+
+selector {
+    property: value;
+}
+For e.g., 
+
+h1{
+    color: purple;
+    width: 100px;
+    height: 200px;
+}
+This makes all h1 purple.
+
+CSS IS HUGE! DON'T PANIC!
+
+Including CSS in the files:
+---------INLINE STYLES:----------
+Included in the html file itself.
+Not a good idea.
+
+----------USE "STYLE" ELEMENT:---------
+YOu can write styles inside of a <style> element.
+This is easy but makes it impossible to share styles between the documents which use same css file.
+Would have to copy and paste this in each one.
+
+NOT RECOMMENDED EITHER!
+
+-----------EXTERNAL STYLESHEET:----------
+Write styles in .css file and then include using a <link> in the head of your html document.
+
+It is included in the head element.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h2{
+            color: pink;
+        }
+    </style>
+
+    <link rel="stylesheet" href="23_CSS.css">
+
+<!-- -----------------INCLUDING STYLE ELEMENT IN THIS -->
+
+
+    <title>Document</title>
+</head>
+<body>
+    <h2>I am style element included.</h2>
+    <h3>Example to show the linked css file.</h3>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on forms: Checkboxes, Radio Buttons, and Selects</title>
+</head>
+
+<body>
+    <h1>More on forms</h1>
+    <form action="/birds">
+        <!-- The text in the label attribute appears after the checkbox if you put label after the input attribute. -->
+
+        <input id="agree" type="checkbox" name="agree_to_terms_of_service" checked>
+        <!-- 
+            checked attribute:
+            Already checks the box in the page and it can be unchecked by the user.
+         -->
+
+        <label for="agree">I agree to everything</label>
+        <button>Submit</button>
+
+        <!-- <radio> buttons:
+        Allows us to check only one among the many radio buttons in the group -->
+        <p>
+            <!-- 
+                "name":
+                A group of radio buttons is associated together by "name" attribute.
+                If we set the name of the buttons same, then they are considered one group. -->
+            <input type="radio" name="size" id="rb1" value="UK 4">
+            <!--"value": 
+                After adding "value" attribute and hitting enter, we get the output in the browser as file:///D:/birds?agree_to_terms_of_service=on&size=UK+4 -->
+            <label for="rb1">UK 4:</label>
+
+            <input type="radio" name="size" id="rb2" value="UK 5">
+            <label for="rb2">UK 5:</label>
+
+            <input type="radio" name="size" id="rb3" value="UK 6">
+            <label for="rb3">UK 6:</label>
+            <!--
+                "value": 
+                After we have input the data we want and when we enter click, the information that gets through is just "on". If we want to actually send a value through the browser to the server, we should add value attribute. For e.g., file:///D:/birds?agree_to_terms_of_service=on&size=on 
+                If we want more information to get through we want to add the "value" attribute.
+        -->
+        </p>
+
+        <!-- <select> tag:
+            Combination of select and option attribute.
+            It is basically a drown down select option. -->
+        <p>
+            <label for="meal">Please select an entree:</label>
+            <select name="meal" id="meal">
+                
+                <option value="">--Please pick an option--</option>
+                <!-- The first option can be used as a placeholder. -->
+                
+                <option value="fish">Fish</option>
+
+                <!--
+                    "value": 
+                    value is what gets through to the server, the value written outside the bracket actually shows up to the user. -->
+                <option value="Chicken">Chicken</option>
+
+                <option value="Salad" selected>Salad</option>
+                <!-- "selected":
+                     Just like "checked attribute", this one also automatically selects the option for the user.  -->
+                
+                <option value="Red Meat">Red Meat</option>
+
+            </select>
+        </p>
+
+        <p>
+            <!-- 
+                type - "range":
+                    Lets you select a range of inputs.
+             -->
+            <label for="cheese">Amount of cheese:</label>
+            <input name="cheese_range" id="cheese" type="range" value="cheese range" name=""  min="1" max="100" step="7">
+
+            <label for="number1">Number</label>
+            <input type="number" id="number" min="1" max="1000" step="2">
+        </p>
+
+        <p>
+            <!-- 
+                type - "textarea":
+                    gives you an area to write text or any sort of paragraph.
+             -->
+             <label for="comment">Any comments:</label>
+             <br>
+            <textarea name="comments" id="comment" cols="30" rows="10" placeholder="Comments for us:"></textarea>
+            <!-- "rows and cols":
+            Decides the length and breadth of the text area. -->
+        </p>
+
+        <!-- "validations":
+            
+        -->
+    </form>
+</body>
+
+</html>

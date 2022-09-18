@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration Form</title>
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+    <form action="/registration">
+        <p>
+            <!-- always include a label!!! -->
+            <label for="first">First name</label>
+            <input type="text" name="first_name" id="first" required>
+
+            <label for="last">Last name</label>
+            <input type="text" name="last_name" id="last" required>
+        </p>
+
+        <p>
+            Select a Race:
+        </p>
+
+        <p>
+            <input type="radio" name="race" id="b1" value="Fun Run 5k">
+            <label for="b1">Fun Run 5k</label>
+            <br>
+            <!-- value attribute is essential for sending specific values when using radion input. -->
+
+            <input type="radio" name="race" id="b2" value="half marathon">
+            <label for="b2">Half Marathon</label>
+            <br>
+
+            <input type="radio" name="race" id="b3" value="full marathon">
+            <label for="b3">Full Marathon</label>
+            <br>
+        </p>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email_user" id="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required minlength="10" maxlength="20">
+        </div>
+
+        <p>
+            <label for="age">Select Age group</label>
+            <select name="age" id="age">
+                <option value="under 18">under 18</option>
+                <option value="18-30">18-30</option>
+                <option value="30-50">30-50</option>
+                <option value="50+">50+</option>
+            </select>
+        </p>
+
+        <button>Register!</button>
+    </form>
+
+</body>
+
+</html>

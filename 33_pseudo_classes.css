@@ -1,0 +1,146 @@
+/* 
+Pseudo classes:
+
+Keyword added to a selector that specifies a special state of the selected element.
+E.g., :active, :checked, :first, :first-child, :hover, :not(), :nth-child(), :nth-of-type(), etc. 
+Syntax-
+a:hover{
+    color: orange;
+}
+
+*/
+
+body{
+    background-color: #fefae0;
+}
+
+button{
+    font-size: 30px;
+    background-color: #bde0fe;
+}
+
+h1, h2{
+    color: #264653;
+}
+
+#signup{
+    background-color: #003049;
+    color: #eae2b7 ;
+}
+
+span{
+    color: #457b9d;
+}
+
+.tag{
+    background-color: #e76f51;
+    color: #fefae0;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+li a{
+    color: #d62828;
+    text-decoration: none;
+}
+
+span a{
+    color: #003049;
+}
+
+.post a{
+    color: #003049;
+}
+
+footer a{
+    color: #d62828;
+}
+
+input + button{
+    background-color: palegoldenrod;
+}
+
+h2 + button{
+    color: #14213d;
+    background-color: #fca311;
+    font-size: 20px;
+}
+
+footer > a{
+    color: black;
+}
+
+input[type="password"]{
+    color: greenyellow;
+}
+
+.post a{
+    color: #457b9d;    
+}
+
+/* 
+Example
+*/
+
+button:hover{
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+.post button:hover{
+    background-color: #14213d;
+    color: white;
+}
+
+.post a:hover{
+    color: #457b9d;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+/* 
+Class when some element is clicked, it is used using "active" pseudo class.
+*/
+
+.post button:active{
+    background-color: #f72585;
+    color: #457b9d;
+
+}
+
+.post{
+    background-color: #c9cba3 ;
+}
+
+/* 
+The above one makes every post's background color as that colour.
+We have to alter only the 3rd post type. So, for that we select the pseudo class nth-of-type.
+
+Syntax-
+
+.post:nth-of-type(3){
+
+}
+
+*/
+
+.post:nth-of-type(3){
+    background-color: #b5e48c;
+}
+
+/* 
+To alter every 3rd type of post in the doc.
+
+Syntax-
+.post:nth-of-type(3n){
+
+}
+
+Alters every 3rd post's content.
+*/
+
+.post:nth-of-type(2n){
+    background-color: #d9ed92;
+}
+
+

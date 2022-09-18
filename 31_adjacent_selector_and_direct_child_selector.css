@@ -1,0 +1,94 @@
+/* 
+----------------Adjacent selector-
+
+Select only the paragraphs that are immediately preceded by an <h1>
+
+Syntax-
+h1 + p{
+    color:red;
+}
+
+
+*/
+body{
+    background-color: #fefae0;
+}
+
+/* button{
+    font-size: 30px;
+    background-color: #bde0fe;
+} */
+
+h1, h2{
+    color: #264653;
+}
+
+#signup{
+    background-color: #003049;
+    color: #eae2b7 ;
+}
+
+span{
+    color: #457b9d;
+}
+
+.tag{
+    background-color: #e76f51;
+    color: #fefae0;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+li a{
+    color: #d62828;
+    text-decoration: none;
+}
+
+span a{
+    color: #003049;
+}
+
+.post a{
+    color: #003049;
+}
+
+footer a{
+    color: #d62828;
+}
+
+
+/* 
+
+We want to style the one button that comes immediately after an input, which in this case it is "Log In" button. So, adjacent selector can be used.
+
+Syntax- 
+input + button{
+}
+
+*/
+
+input + button{
+    background-color: palegoldenrod;
+}
+
+h2 + button{
+    color: #14213d;
+    background-color: #fca311;
+    font-size: 20px;
+}
+
+/* 
+----------Direct child selector-
+E.g., select only the <li>'s that are direct children of a <div> element.
+
+Syntax-
+div > li{
+    color: white;
+}
+
+*/
+footer > a{
+    color: black;
+}
+
+

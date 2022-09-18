@@ -1,0 +1,51 @@
+/* 
+Size of fonts-
+
+1. Absolute units-
+
+These are not recommended for responsive websites.
+For e.g., px, pt, cm, in, mm, etc.
+
+2. Relative units-
+
+Commonly used nowadays.
+E.g., em, rem, vh, vw, %, etc.
+
+Font family
+
+*/
+
+h2{
+    font-size: 80px;
+
+    /* 
+    Font stack: 
+    Fonts you would like to use in case the first one is not available in the user OS since not every font family is available in every OS. 
+    */
+    font-family: Segoe UI, Futura, sans-serif;
+
+    color: rgb(236, 190, 25);
+    text-align: center;
+    width: 50%;
+    font-weight: normal;
+    text-decoration: underline;   
+    letter-spacing: 10px;
+
+}
+
+p{
+    color: red;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    color: olive;
+}
+h4{
+    color: rgb(23, 23, 126);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validations:</title>
+</head>
+<body>
+    <h1>Form validations:</h1>
+    <form action="/validations">
+        <p>
+            <label for="first">Enter first name:</label> 
+            <input type="text" name="first name" id="first" required>
+
+            <!-- 
+                "required" attribute:
+                    It is required to fill this information for submission.
+             -->
+            
+            <label for="second">Enter second name:</label>
+            <input type="text" id="second">
+            <button>Submit</button>
+            
+            <label for="third">Password:</label>
+            <input type="password" id="third" name="password of user" minlength="10" maxlength="20" required >
+            <!-- minlength and maxlength:
+                    Sets the length of the input you enter. -->
+            
+            <label for="fourth"></label>
+            <!-- <input type="text" id="fourth"> -->
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email_user" id="email" required>
+
+            <input type="url" required>
+            <!-- Wont let you submit unless the input type is the form of an email -->
+        </p>
+
+
+    </form>
+</body>
+</html>

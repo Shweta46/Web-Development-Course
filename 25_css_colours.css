@@ -1,0 +1,33 @@
+h2{
+    color: teal;
+    background-color: papayawhip;
+}
+
+button{
+    color: greenyellow;
+    border-color: rgb(89, 151, 0);
+    background-color: aquamarine;
+}
+
+p{
+    color: blue;
+    background-color: blanchedalmond;
+}
+
+body{
+    background-color: #ce5;
+}
+
+/* 
+Color Systems:
+
+1. RGB colours-
+Each channel goes from 0-255.
+
+Syntax- rgb(255, 0, 90);
+
+
+2. Hexadecimal-
+
+Each channel ranges from 0-255 but represented using hexadecimal which is base 16 represenation of colours.
+*/

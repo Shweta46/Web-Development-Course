@@ -1,0 +1,133 @@
+<!--
+
+    Screen Reader:
+    Used to navigate through the content.
+-->
+<!--
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet Demo</title>
+</head>
+<body>
+    <!--
+        Emmet used here: main>section>h1
+    -->
+    <main>
+        <section>
+            <h1></h1>
+        </section>
+    </main>
+
+
+    <!--
+        h1+h2+h3
+    -->
+    <h1></h1>
+    <h2></h2>
+    <h3></h3>
+
+    <!--
+        div+div>p>span+em^bq
+
+        "+" means siblings.
+        ">" means children of the said tag used.
+    -->
+
+    <div></div>
+    <div>
+        <p><span></span><em></em></p>
+        <blockquote></blockquote>
+    </div>
+    
+    <!--
+        footer>p>ul>li
+    -->
+    <footer>
+        <p>
+            <ul>
+                <li></li>
+            </ul>
+        </p>
+    </footer>
+
+    <!--
+        OR use "*" to create multiple "li's" inside the "ul"
+        footer>p>ul>li*5
+    -->
+
+    footer>p>ul>li*5
+    <footer>
+        <p>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </p>
+    </footer>
+    <!--
+        OR use "$" to create lists with numbers along with multiple elements. 
+        ul>li.item$*5
+        It creates numbers automatically 
+    -->
+    <ul>
+        <li class="item1"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+    </ul>
+
+    <!--
+        nav>ul>li*5>a
+    -->
+
+    <nav>
+        <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </nav>
+
+    <!--
+        nav>ul>li*5>a[href="www.$.com"]
+
+    -->
+
+    <nav>
+        <ul>
+            <li><a href="www.1.com"></a></li>
+            <li><a href="www.2.com"></a></li>
+            <li><a href="www.3.com"></a></li>
+            <li><a href="www.4.com"></a></li>
+            <li><a href="www.5.com"></a></li>
+        </ul>
+    </nav> 
+
+    <!--
+        {}:
+        Used for inserting text.
+        nav>ul>li*5>a[href="www.$.com"]{Click Me}
+
+    -->
+    <nav>
+        <ul>
+            <li><a href="www.1.com">Click Me</a></li>
+            <li><a href="www.2.com">Click Me</a></li>
+            <li><a href="www.3.com">Click Me</a></li>
+            <li><a href="www.4.com">Click Me</a></li>
+            <li><a href="www.5.com">Click Me</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
