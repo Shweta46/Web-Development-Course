@@ -1,0 +1,58 @@
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: #e5989b;
+}
+
+h1{
+    background-color: pink;
+    width: 100px;
+}
+
+#one{
+    background-color: #e9c46a;
+
+    /* 
+    Border is visible only if the below three mentioned properties are present.
+    Pixels are a good unit to use in terms of border since they are naturally thin. 
+    */
+
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+
+    /* 
+    After the above steps, our actual content box becomes 210px since border is present on both sides and the width is 200px.
+    To fix the size, we can use the box-sizing and set it to "border-box" to set the size of the box to an exact 200px.
+    */
+    box-sizing: border-box;
+}
+
+#two{
+    background-color: #fcbf49;
+    border-color: #344e41;
+    border-width: 5px;
+    border-style: dashed;
+    box-sizing: border-box;
+    border-left-width: 8px;
+
+    
+}
+
+#third{
+    background-color:#fca311 ;
+    /* 
+    Border shorthand-
+    border: width style color;
+    */
+    border: 4px solid black;
+    border-left-style: dotted;
+    box-sizing: border-box;
+    /* border-radius: 30px; applies to all 4 sides */
+    /* 
+    To create circle, set radius to 50%. 
+    */
+    border-radius: 50%;
+    border-radius: 10px 100px / 120px;
+}

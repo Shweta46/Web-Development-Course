@@ -1,0 +1,84 @@
+/* 
+Configurations that can be controlled using transition are-
+Property name, duration, timing function, and delay.
+
+*/
+
+.circle{
+    width: 300px;
+    height: 300px;
+    background-color: #006d77;
+    /* to make the transition from the rectangle to it being a circle (when hovering) smooth, we use transition property */
+    /* transition: 1s; */
+
+    /* only changing the background color */
+    /* transition: background-color 2s;     */
+
+    /* specifying a delay in transition from one value of the property to other*/
+    /* transition: background-color 3s 1s; */
+
+    /* If we want all properties to do the same thing we are specifying, then */
+    /* transition: all 2s 1s; */
+
+    /* Can specify different transition for different properties */
+    /* transition: background-color 1s, border-radius 2s; */
+    
+
+}
+
+.circle:hover{
+    background-color: #e29578;
+    border-radius: 50%;
+}
+
+
+h1{
+    background-color: magenta;
+    width: 25%;
+    text-align: center;
+    padding: 1em;
+    color: white;
+
+    /* including the transition property in the shorthand */
+    transition: background-color 1s ease-in-out, width 1s ease-in-out 1s;
+}
+
+h1:hover{
+    width: 50%;
+    background-color: cyan;
+}
+
+section div{
+    height: 100px;
+    width: 100px;
+    background-color: turquoise;
+    margin: 2px 0;
+    transition: margin-left 3s;
+}
+
+section:hover div{
+    /* Moves the entire section by 500px to the left */
+    margin-left: 500px;
+}
+
+/* 
+Transition timing function-
+
+It determines how the intermediate values are calculated for CSS properties being affected by a transition effect.
+
+Linear, ease-in, steps, cubic-bezier, etc.
+
+*/
+div:nth-of-type(1){
+    transition-timing-function: ease-in;
+}
+div:nth-of-type(2){
+    transition-timing-function: ease-out;
+}
+div:nth-of-type(3){
+    transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+}
+div:nth-of-type(4){
+    transition-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
+}
+

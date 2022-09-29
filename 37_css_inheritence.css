@@ -1,0 +1,27 @@
+body{
+    color: purple;
+}
+
+h1{
+    color: blue;
+}
+
+section{
+    color: aqua;
+}
+
+form{
+    color: green;
+}
+
+/* 
+Not every element directly inherits properties from its parent.
+
+Button inherits its property directly from its nearest parent, in this case, the parent is form. But its not exclusively doing that. So we specify "inherit" in its styling and tell the browser that we want this property to be "inherited" from its parent. 
+
+Some properties are inheritable and some aren't. You can always look for those which are.
+
+*/
+button{
+    color: inherit;
+}

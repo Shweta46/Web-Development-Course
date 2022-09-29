@@ -1,0 +1,129 @@
+/* 
+Relative units-
+
+E.g., em, rem, %,
+
+1. Percentage-
+It is always relative to some other value.
+Sometimes, its a value from the parent and other times that is in some properties (e.g, line-height) its a value from the element itself.
+
+width: 50%; - half the width of the parent
+line-height: 50%; - half the font-size of the element itself
+
+2. em-
+EM's are relative units.
+With font-szie, 1em equals the font-size of the parent. 2em's is twice the font-size of the parent, etc.
+
+With other properties, 1em is equal to the computed font-size of the element itself.
+
+3. rem-
+Relative to the root html element's font-size. Other easier to work with. 
+If the root font-size is 20px, 1 rem is always 20px, 2rem is always 40px, etc.
+Easier to work with and do have a place.
+*/
+
+
+/* changing the font size of root element */
+html{
+    font-size: 30px;
+}
+section{
+    background-color: #52796f;
+    width: 800px;
+    height: 800px;
+}
+
+div{
+    background-color: #84a98c;
+    
+    /* this takes the width and height of the parent element. */
+    width: 50%;
+    height: 50%;
+}
+h1{
+    font-size: 40px;
+    border: 1px solid black;
+    
+    /* This will make the line height 200% of the font-size for this element and has nothing to do with the parent */
+    line-height: 200%;
+}
+
+#ems h2{
+    /* parent of h2 is article, so article has 30px so now h2 will have 60px font size */
+    font-size: 2em;
+    /* The font size changes the margin also changes as the margin's em depends on the element's font size itself.
+    So the size of margin depends on the font size whose size depends upon its parent */
+    margin-left: 1em;
+}
+
+#ems h3{
+    font-size: 1.5em;
+}
+
+#ems p{
+
+    font-size: 1em;
+}
+
+#ems{
+    /*This was first named "article" */
+    font-size: 15px;
+}
+
+/* padding and margin also use em's commonly where 1em is equal to the size of the element itself */
+
+/* button{
+    font-size: 30px;
+    padding: 0 30px;
+    border-radius: 15px;
+    background-color:#2a9d8f;
+    color: #faedcd;
+} */
+/* the above button doesnt scale at all. If I want the button to proportionatly scaled then it wont happen since its just mentioned in pixels, not with respect to something. */
+
+/* So to make it proportional, we can do */
+
+
+button{
+    /* font size changes according to its parent's size and if I increase or decrease it, the whole effect will be visible on our button */
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color:#2a9d8f;
+    color: #faedcd;
+}
+/* If I place "button" outside of the article, that is in different sections of the page, the size for each would differ according to the parent or the element */
+
+/*
+
+If we introduce list in the page with nested ul's then-
+----------------Common problems with em's-
+The nested ul keeps growing as its 1.5 times the size of its parent and its parent is 1.5 times its parent and so on.
+So nested ul's can stack and grow or shrink very quickly.
+
+
+
+*/
+ul{
+    font-size: 1.5em;
+    /* This increased the  */
+}
+
+#rems h2{
+    font-size: 3rem;
+}
+
+#rems h3{
+    font-size: 2rem;
+}
+
+#rems button{
+    font-size: 5rem;
+}
+
+#rems ul{
+    /* the font size is now always based upon the root element font size, does not change like the way it was before */
+    font-size: 1rem;
+}
+
+/* Sometimes, ems are advantageous than rems */

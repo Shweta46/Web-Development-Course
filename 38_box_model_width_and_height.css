@@ -1,0 +1,27 @@
+/* 
+CSS Box Model-
+
+Everything in CSS is a box.
+
+Every box contains- Content box, Padding, Border, and Margin.
+
+The properties that control the Content box are- width, and height.
+
+*/
+
+div{
+    width: 200px;
+    /* 
+    Limits the size of the div element from the actual available content box.
+    */
+    height: 200px;
+    background-color: #e5989b;
+    /* 
+    The background color goes around only in the content area covered by the width and height.
+    */
+
+}
+h1{
+    background-color: pink;
+    width: 100px;
+}

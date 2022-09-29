@@ -1,0 +1,30 @@
+/* 
+Alpha channel-
+
+Covers the transparency of the colour. Ranges from 0 to 1 where 0 is completely transparent.
+
+opacity-
+It is a property that covers the entire property of the element and its descendants.
+Range is 0 to 1, where 0 is completely transparent and 1 is not at all.
+*/
+
+section{
+    width: 500px;
+    height: 500px;
+    background-color: mediumpurple;
+}
+
+#rgba{
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#opacity{
+    opacity: 0.3;
+    /* opacity applies to entire content of div */
+    width: 50%;
+    height: 50%;
+    background-color: orangered;
+}
+

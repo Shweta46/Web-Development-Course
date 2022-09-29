@@ -1,0 +1,79 @@
+/* 
+
+Display Property-
+Allows us to change the default inline or block behaviour of elements. 
+1. Inline 
+
+
+2. Block
+
+
+3. Inline-block
+In this, the element behaves like an inline element except width, height, margin, and padding are respected.
+
+*/
+
+h1{
+    background-color: palegoldenrod;
+    border: 1px solid black;
+
+    /* 
+    h1 is block level element.
+    */
+    display: inline;
+    /* The display property changes the block behvaiour to inline. */
+}
+
+#somethingelse{
+    background-color: paleturquoise;
+    border: 1px solid black;
+
+    /* 
+    Span is inline element.
+    */
+    display: block;
+}
+
+#exercise{
+    background-color: palevioletred;
+    border: 5px solid black;
+    
+    /* When an element is inline, the width, height are ignored */
+    width: 50px;
+
+    /* But padding is respected in the inline element as padding doesnt push away the content around the element, it stays there. It is not respected by the rest of the content of the page. */
+    padding: 50px;
+
+    /* What about margin?
+    The margin is respected only horizontally that is the content which is inline with the element, not the rest of the content */
+    margin: 50px;
+
+}
+
+/* h2 is a block level element */
+h2{
+    background-color: palevioletred;
+    border: 1px solid black;
+
+    /* Every property is respected in the block element. */
+    width: 500px;
+    height: 150px;
+    padding: 50px;
+    margin: 50px;
+    display: none;
+    /* Hides the element in the page. */
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color:olivedrab;
+    border: 5px solid black;
+
+    /* three of them to be together */
+    display: inline-block;
+    margin: 50px;
+    /* These are inline elements that is can be next to each other and the padding, margin, width, and height are respected as well. */
+    
+}
+

@@ -1,0 +1,65 @@
+/* 
+Margin-
+It is the space outside of a border existing between the border of the box and something else outside it.
+
+Margin shorthand works the same way as padding shorthand does.
+*/
+/* Lot of the time the below practice is done to remove unnecessary margin and then add to the ones we actually want. */
+body{
+    margin: 0;
+}
+div{
+    width: 200px;
+    height: 200px;
+    background-color: #e5989b;
+}
+
+h1{
+    background-color: pink;
+    width: 200px;
+    padding-left: 100px;
+    padding-top: 50px;
+    margin-bottom: 0;
+}
+
+#one{
+    background-color: #e9c46a;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+#two{
+    background-color: #fcbf49;
+    border-color: #344e41;
+    border-width: 5px;
+    border-style: dashed;
+    box-sizing: border-box;
+    border-left-width: 8px;
+    padding-right: 10px;
+    margin: 20px;
+}
+
+#third{
+    background-color:#fca311 ;
+
+    /* 
+    Border shorthand
+    */
+    border: 4px solid black;
+    border-left-style: dotted;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-radius: 10px 100px / 120px;
+}
+
+button{
+    padding: 20px;
+    /* 
+    Padding shorthand
+    */
+    padding: 5px 1px 0 2px;
+}
